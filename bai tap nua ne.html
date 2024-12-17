@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap</title>
+</head>
+<body>
+
+<form action="" >
+  <label for="do_c">do c</label>
+  <input type="text" name="do_c" id="do_c">
+  <br><br>
+  <button type="button" onclick="tinhtoan()">bam ket qua</button>
+</form>
+<div id="do_f"> do f la:</div>
+<script>
+  function tinhtoan(){
+    let do_c = parseInt(document.getElementById("do_c").value);
+    console.log(do_c);
+    document.getElementById("do_f").innerHTML = 'do f: '+ [(do_c)/5]*9+32;
+  }
+</script>
+
+</body>
+</html>

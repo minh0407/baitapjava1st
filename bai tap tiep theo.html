@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tapp</title>
+</head>
+<body>
+<form>
+    <label for="ban kinh"> nhap ban kinh duong tron: </label>
+    <input type="text" id="ban kinh">
+    <button type="button" onclick="tinhtoan()">enter</button>
+</form>
+<div id="result1"> chu vi hinh tron la: </div>
+<div id="result"> dien tich hinh tron la:  </div>
+<script>
+    function tinhtoan() {
+        let ban = parseInt(document.getElementById("ban kinh").value);
+        console.log(ban);
+        document.getElementById("result1").innerHTML = "chu vi hinh tron la: " + ban *2*3.14;
+        document.getElementById("result").innerHTML = "dien tich  hinh tron la: " + ban*ban*3.14
+    }
+</script>
+</body>
+</html>
